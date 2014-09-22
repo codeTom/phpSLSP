@@ -2,17 +2,17 @@
 Simple php wrapper for Slovenska Sporitelna's [databanking API](http://developer.databanking.sk/)
 
 Current features:
--Login
--Get account list(or account by IBAN)
--Select account
--Get transaction list
--Get transaction (by date range, variable symbol,[amount])
--Logout
+ - Login
+ - Get account list(or account by IBAN)
+ - Select account
+ - Get transaction list
+ - Get transaction (by date range, variable symbol,[amount])
+ - Logout
 
 ##Instructions
--Fill in config-dist.php
--rename to config.php
--short demo folows, read the file for details
+ - Fill in config-dist.php
+ - rename to config.php
+ - short demo folows, read the file for details
 ```
 $s=new SLSP();
 if(!$s->login()){die();}//login
@@ -23,6 +23,6 @@ echo $s->getAccountByIBAN("yourIBAN")->own_resources; //class SLSPAccount in SLS
 ```
 
 ##TODO:
--Safer cookie handling (currently unencrypted file)
--Implement payments
--Add demo
+ - Safer cookie handling (currently unencrypted file)
+ - Implement payments
+ - Add demo
